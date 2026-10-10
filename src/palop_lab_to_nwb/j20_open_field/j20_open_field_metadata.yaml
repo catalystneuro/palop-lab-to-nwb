@@ -1,0 +1,38 @@
+NWBFile:
+  experiment_description: >-
+    Open-field behavior of hAPP-J20 transgenic (WT/TG) and wild-type (WT/WT) mice from the J20-FVB line.
+    Each mouse was placed in a circular open-field arena and filmed from above for 60 minutes, on two
+    exposures about one week apart (exposure 1 on 2024-01-16 to 2024-01-18, exposure 2 on 2024-01-22 to
+    2024-01-23). Four arenas were recorded in parallel, each by its own camera. Eleven body parts were
+    tracked in every video with a single-animal DeepLabCut model (ResNet-50).
+  institution: Gladstone Institutes
+  lab: Palop Lab
+  experimenter:
+    - Bangera, Shreya
+  keywords:
+    - open field
+    - hAPP-J20
+    - Alzheimer's disease model
+    - pose estimation
+    - DeepLabCut
+Subject:
+  species: Mus musculus
+  strain: FVB
+Behavior:
+  ExternalVideos:
+    behavior_video:
+      name: BehaviorVideo
+      description: Overhead video of the open-field arena, acquired with SpinView.
+      unit: Frames
+      dimension: [1024, 1024]
+Pose:
+  Skeletons:
+    deep_lab_cut_metadata_key:
+      name: Skeleton
+  PoseEstimations:
+    deep_lab_cut_metadata_key:
+      description: >-
+        2D keypoints estimated with DeepLabCut (ResNet-50, iteration 0, shuffle 1, snapshot 700000). Train error
+        2.06 px and test error 8.53 px (4.68 px with p-cutoff 0.6).
+  PoseTraining:
+    annotator: Shreya Bangera
