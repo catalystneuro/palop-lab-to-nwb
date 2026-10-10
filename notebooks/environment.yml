@@ -1,0 +1,14 @@
+name: palop_j20_open_field_demo
+channels:
+  - conda-forge
+dependencies:
+  - python==3.12
+  - pip
+  - pip:
+      - jupyter
+      - matplotlib
+      - pandas
+      - tables
+      - pynwb>=4.0.0
+      - ndx-pose>=0.4.0
+      - opencv-python-headless

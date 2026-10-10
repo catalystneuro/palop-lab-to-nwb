@@ -218,3 +218,13 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# NWB output
+*.nwb
+nwb_output/
+nwb_stub/
+.DS_Store
+
+
+# Others
+.env
